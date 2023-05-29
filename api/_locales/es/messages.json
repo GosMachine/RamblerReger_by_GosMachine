@@ -1,0 +1,177 @@
+{
+   "accountSettings": {
+      "message": "Ajustes de la cuenta"
+   },
+   "accountSuccessfullyConnected": {
+      "message": "¡La cuenta conectada con éxito!"
+   },
+   "apiKey": {
+      "message": "API-KEY:"
+   },
+   "autoSubmitAlertCodeRequired": {
+      "message": "¡Se requiere código!"
+   },
+   "autoSubmitAlertFormOpened": {
+      "message": "¡Guarde o cancele primero el formulario abierto anteriormente!"
+   },
+   "autoSubmitAlertUrlInvalid": {
+      "message": "El patrón de URL debe ser una expresión regular válida."
+   },
+   "autoSubmitAlertUrlRequired": {
+      "message": "¡Se requiere un patrón de URL!"
+   },
+   "autoSubmitConfirmDelete": {
+      "message": "Eliminar regla"
+   },
+   "autoSubmitCreateNewRule": {
+      "message": "Crear nueva regla"
+   },
+   "autoSubmitDescription": {
+      "message": "De forma predeterminada, la función \"AutoSubmit\" envía un formulario que contiene un campo de respuesta captcha. Si se debe hacer algo más después de resolver el captcha, por ejemplo, se debe hacer clic en algún botón, defínalo aquí:"
+   },
+   "autoSubmitNoRules": {
+      "message": "Aún no se agregaron reglas..."
+   },
+   "autoSubmitPlaceholderCode": {
+      "message": "Secuencia de acciones a ejecutar, por ejemplo:"
+   },
+   "autoSubmitPlaceholderUrl": {
+      "message": "Patrón de URL (regex), por ejemplo:"
+   },
+   "autoSubmitRules": {
+      "message": "Reglas de envío automático"
+   },
+   "balance": {
+      "message": "Saldo"
+   },
+   "blackListDomain": {
+      "message": "Lista negra de URL"
+   },
+   "buttonPosition": {
+      "message": "Ubicación del botón"
+   },
+   "buttonPositionFixed": {
+      "message": "Esquina derecha inferior"
+   },
+   "buttonPositionInner": {
+      "message": "Cerca del captcha"
+   },
+   "cancel": {
+      "message": "Cancelar"
+   },
+   "connect": {
+      "message": "Conectar"
+   },
+   "contactUs": {
+      "message": "Contactenos: \u003Ca href=\"mailto:$email$\">$email$\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "createAccountToGetIt": {
+      "message": "\u003Ca href=\"#\" data-lang-link=\"$link$\" target=\"_blank\">Crea una cuenta \u003C/a> para obtenerlo.",
+      "placeholders": {
+         "link": {
+            "content": "$1"
+         }
+      }
+   },
+   "delay": {
+      "message": "Retraso"
+   },
+   "delete": {
+      "message": "Borrar"
+   },
+   "doNotHaveApiKey": {
+      "message": "¿No tiene API-KEY?"
+   },
+   "edit": {
+      "message": "Editar"
+   },
+   "enablePlugin": {
+      "message": "Habilitar extensión"
+   },
+   "enabledSolveAutomatically": {
+      "message": "Activado / Resolver automáticalmente"
+   },
+   "extDescription": {
+      "message": "La extensión para resolver automáticalmente los CAPTCHAs en cualqer página web."
+   },
+   "extName": {
+      "message": "Captcha Solver: Auto Evitar"
+   },
+   "extShortName": {
+      "message": "Captcha Solver"
+   },
+   "generalSettings": {
+      "message": "Ajustes generales:"
+   },
+   "haveAnyQuestions": {
+      "message": "¿Tiene preguntas o sugerencias?"
+   },
+   "ifErrorRepeat": {
+      "message": "En caso de error, repetir"
+   },
+   "images": {
+      "message": "Imagenes"
+   },
+   "login": {
+      "message": "Iniciar sesión"
+   },
+   "logout": {
+      "message": "Cerrar sesión"
+   },
+   "manualLink": {
+      "message": "Manual"
+   },
+   "markAsCaptchaSource": {
+      "message": "Marcar como fuente de captcha"
+   },
+   "minScore": {
+      "message": "min. score:"
+   },
+   "normalManual": {
+      "message": "La ubicación de la imagen de captcha fue guardado. Ahora, elija dónde poner la respuesta."
+   },
+   "optionsPageTitle": {
+      "message": "Ajustes de 2Captcha Extensión"
+   },
+   "proxySettings": {
+      "message": "Ajustes de proxy"
+   },
+   "proxyType": {
+      "message": "Tipo de proxy"
+   },
+   "putCaptchaAnswerHere": {
+      "message": "Pon la respuesta de captcha aquí"
+   },
+   "save": {
+      "message": "Ahorrar"
+   },
+   "seconds": {
+      "message": "segundos"
+   },
+   "settingsLink": {
+      "message": "Ajustes"
+   },
+   "solveWith2Captcha": {
+      "message": "Resolver con 2Captcha"
+   },
+   "solved": {
+      "message": "Captcha está resuelta!"
+   },
+   "solving": {
+      "message": "Resolviendo..."
+   },
+   "submitFormsAutomatically": {
+      "message": "Enviar formularios automáticalmente"
+   },
+   "times": {
+      "message": "veces"
+   },
+   "useProxy": {
+      "message": "Usar proxy"
+   }
+}

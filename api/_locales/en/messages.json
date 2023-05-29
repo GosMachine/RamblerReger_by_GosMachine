@@ -1,0 +1,177 @@
+{
+   "accountSettings": {
+      "message": "Account Settings:"
+   },
+   "accountSuccessfullyConnected": {
+      "message": "Account successfully connected!"
+   },
+   "apiKey": {
+      "message": "API-KEY:"
+   },
+   "autoSubmitAlertCodeRequired": {
+      "message": "Code is required!"
+   },
+   "autoSubmitAlertFormOpened": {
+      "message": "Please save or cancel previously opened form first!"
+   },
+   "autoSubmitAlertUrlInvalid": {
+      "message": "URL pattern must be valid regular expression!"
+   },
+   "autoSubmitAlertUrlRequired": {
+      "message": "URL pattern is required!"
+   },
+   "autoSubmitConfirmDelete": {
+      "message": "Delete rule"
+   },
+   "autoSubmitCreateNewRule": {
+      "message": "Create new rule"
+   },
+   "autoSubmitDescription": {
+      "message": "By default, \"AutoSubmit\" feature submits form which contains captcha answer field. If something else must be done after captcha is solved, for example some button must be clicked, please define it here:"
+   },
+   "autoSubmitNoRules": {
+      "message": "No rules added yet..."
+   },
+   "autoSubmitPlaceholderCode": {
+      "message": "Sequence of actions to execute, for example:"
+   },
+   "autoSubmitPlaceholderUrl": {
+      "message": "URL pattern (regexp), for example:"
+   },
+   "autoSubmitRules": {
+      "message": "AutoSubmit rules"
+   },
+   "balance": {
+      "message": "Balance"
+   },
+   "blackListDomain": {
+      "message": "URL blacklist"
+   },
+   "buttonPosition": {
+      "message": "Button position"
+   },
+   "buttonPositionFixed": {
+      "message": "Bottom right corner"
+   },
+   "buttonPositionInner": {
+      "message": "Near the captcha"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "connect": {
+      "message": "Connect"
+   },
+   "contactUs": {
+      "message": "Contact us: \u003Ca href=\"mailto:$email$\">$email$\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "createAccountToGetIt": {
+      "message": "\u003Ca href=\"#\" data-lang-link=\"$link$\" target=\"_blank\">Create account\u003C/a> to get it.",
+      "placeholders": {
+         "link": {
+            "content": "$1"
+         }
+      }
+   },
+   "delay": {
+      "message": "Delay"
+   },
+   "delete": {
+      "message": "Delete"
+   },
+   "doNotHaveApiKey": {
+      "message": "Do not have API-KEY?"
+   },
+   "edit": {
+      "message": "Edit"
+   },
+   "enablePlugin": {
+      "message": "Enable plugin"
+   },
+   "enabledSolveAutomatically": {
+      "message": "Enabled / Solve automatically"
+   },
+   "extDescription": {
+      "message": "2Captcha Solver plugin allows you to automatically solve CAPTCHAs found on any webpage."
+   },
+   "extName": {
+      "message": "Captcha Solver: Auto Recognition and Bypass"
+   },
+   "extShortName": {
+      "message": "Captcha solver"
+   },
+   "generalSettings": {
+      "message": "General settings:"
+   },
+   "haveAnyQuestions": {
+      "message": "Have any questions/suggestions?"
+   },
+   "ifErrorRepeat": {
+      "message": "If error happens, repeat"
+   },
+   "images": {
+      "message": "Images"
+   },
+   "login": {
+      "message": "Login"
+   },
+   "logout": {
+      "message": "Logout"
+   },
+   "manualLink": {
+      "message": "Manual"
+   },
+   "markAsCaptchaSource": {
+      "message": "Mark as captcha source"
+   },
+   "minScore": {
+      "message": "min. score:"
+   },
+   "normalManual": {
+      "message": "Location of image with captcha is saved. Now, please choose where to put answer."
+   },
+   "optionsPageTitle": {
+      "message": "2Captcha Extension Settings"
+   },
+   "proxySettings": {
+      "message": "Proxy settings"
+   },
+   "proxyType": {
+      "message": "Proxy type"
+   },
+   "putCaptchaAnswerHere": {
+      "message": "Put captcha answer here"
+   },
+   "save": {
+      "message": "Save"
+   },
+   "seconds": {
+      "message": "seconds"
+   },
+   "settingsLink": {
+      "message": "Settings"
+   },
+   "solveWith2Captcha": {
+      "message": "Solve with 2Captcha"
+   },
+   "solved": {
+      "message": "Captcha solved!"
+   },
+   "solving": {
+      "message": "Solving..."
+   },
+   "submitFormsAutomatically": {
+      "message": "Submit forms automatically"
+   },
+   "times": {
+      "message": "times"
+   },
+   "useProxy": {
+      "message": "Use proxy"
+   }
+}

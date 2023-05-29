@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "assets/images/icon_128.png",
+         "32": "assets/images/icon_32.png"
+      },
+      "default_popup": "popup/popup.html",
+      "default_title": "Captcha Solver: Auto Recognition and Bypass"
+   },
+   "background": {
+      "service_worker": "service_worker.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "content/style.css" ],
+      "js": [ "vendor/jquery/3.5.1/jquery.min.js", "common/config.js", "content/core_helpers.js", "content/script.js", "content/captcha/geetest/processor.js", "content/captcha/geetest_v4/processor.js", "content/captcha/hcaptcha/processor.js", "content/captcha/keycaptcha/processor.js", "content/captcha/recaptcha/processor.js", "content/captcha/arkoselabs/processor.js", "content/captcha/normal/hunter.js", "content/captcha/normal/processor.js", "content/captcha/lemin/processor.js", "content/captcha/yandex/processor.js", "content/captcha/yandex/hunter.js", "content/captcha/capy/processor.js", "content/captcha/capy/hunter.js", "content/captcha/amazon_waf/processor.js", "content/captcha/turnstile/processor.js", "content/captcha/turnstile/hunter.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "homepage_url": "https://2captcha.com/",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/images/icon_128.png",
+      "32": "assets/images/icon_32.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3iSZ8dZ3vm0fe21u2CJjj87pJ5fk34hb5jB5WUmAczfQMfH3hZeVDmeCVJdXjOOs7+c1BQSYlNyizmhP56zMpWzSYc3kjnlTt2aEnUGMV8yM5b+YWZnAToeSY29D42DjZLnSSnRzdBHBPIkFpTdn0878uXiUsoKa0cnxcnuSv5S9PRESt9/Lj8TKbj9SeNwiMhWWgtQ3RYQvIbBzIFI3w2g0u/9iY2F4ZeDb65Gj4PbWjCGmSuttkjc185RlgiBbuJMc0klyUQ7Mq4PZOL7j6acodmBtpeht/+weEDDmHYR6ugNicoOt8R2Um41b3rhZN0OSG2IclDMgrmnWYKb+qwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options/options.html"
+   },
+   "permissions": [ "storage", "contextMenus" ],
+   "short_name": "__MSG_extShortName__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.3.3",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "assets/images/*", "content/*" ]
+   } ]
+}

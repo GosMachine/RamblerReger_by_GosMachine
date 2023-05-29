@@ -1,0 +1,177 @@
+{
+   "accountSettings": {
+      "message": "Настройки аккаунта:"
+   },
+   "accountSuccessfullyConnected": {
+      "message": "Аккаунт успешно подключен!"
+   },
+   "apiKey": {
+      "message": "API-ключ:"
+   },
+   "autoSubmitAlertCodeRequired": {
+      "message": "Код не заполнен!"
+   },
+   "autoSubmitAlertFormOpened": {
+      "message": "Please save or cancel previously opened form first!"
+   },
+   "autoSubmitAlertUrlInvalid": {
+      "message": "URL шаблон должен быть валидным regexp!"
+   },
+   "autoSubmitAlertUrlRequired": {
+      "message": "URL шаблон не заполнен!"
+   },
+   "autoSubmitConfirmDelete": {
+      "message": "Удалить правило"
+   },
+   "autoSubmitCreateNewRule": {
+      "message": "Создать новое правило"
+   },
+   "autoSubmitDescription": {
+      "message": "По умолчанию, функция \"Автоотправка\", после получения ответа, сабмитит форму, в которой находиться капча. Если после успешного решения капчи нужно сделать что-то другое, например нажать какую-то кнопку, укажите это здесь:"
+   },
+   "autoSubmitNoRules": {
+      "message": "Еще не добавлено ни одного правила..."
+   },
+   "autoSubmitPlaceholderCode": {
+      "message": "Последовательность действий для выполнения, например:"
+   },
+   "autoSubmitPlaceholderUrl": {
+      "message": "URL шаблон (regexp), например:"
+   },
+   "autoSubmitRules": {
+      "message": "Правила автоотправки форм"
+   },
+   "balance": {
+      "message": "Баланс"
+   },
+   "blackListDomain": {
+      "message": "Черный список URL"
+   },
+   "buttonPosition": {
+      "message": "Расположение кнопки"
+   },
+   "buttonPositionFixed": {
+      "message": "Правый нижний угол"
+   },
+   "buttonPositionInner": {
+      "message": "Рядом с капчей"
+   },
+   "cancel": {
+      "message": "Отменить"
+   },
+   "connect": {
+      "message": "Подключить"
+   },
+   "contactUs": {
+      "message": "Дайте нам знать: \u003Ca href=\"mailto:$email$\">$email$\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "createAccountToGetIt": {
+      "message": "\u003Ca href=\"#\" data-lang-link=\"$link$\" target=\"_blank\">Создайте аккаунт\u003C/a> чтобы его получить.",
+      "placeholders": {
+         "link": {
+            "content": "$1"
+         }
+      }
+   },
+   "delay": {
+      "message": "Задержка"
+   },
+   "delete": {
+      "message": "Удалить"
+   },
+   "doNotHaveApiKey": {
+      "message": "Нет API-ключа?"
+   },
+   "edit": {
+      "message": "Изменить"
+   },
+   "enablePlugin": {
+      "message": "Включить плагин"
+   },
+   "enabledSolveAutomatically": {
+      "message": "Включено / Решать автоматически"
+   },
+   "extDescription": {
+      "message": "Этот плагин помогает решать капчи на страницах сайтов."
+   },
+   "extName": {
+      "message": "Captcha Solver: Обход и Авто Ввод Капчи"
+   },
+   "extShortName": {
+      "message": "Captcha Solver"
+   },
+   "generalSettings": {
+      "message": "Общие настройки:"
+   },
+   "haveAnyQuestions": {
+      "message": "Есть вопросы/предложения?"
+   },
+   "ifErrorRepeat": {
+      "message": "В случае ошибки, повторить"
+   },
+   "images": {
+      "message": "Изображения"
+   },
+   "login": {
+      "message": "Войти"
+   },
+   "logout": {
+      "message": "Выход"
+   },
+   "manualLink": {
+      "message": "Документация"
+   },
+   "markAsCaptchaSource": {
+      "message": "Решать эту капчу"
+   },
+   "minScore": {
+      "message": "мин. score:"
+   },
+   "normalManual": {
+      "message": "Расположение изображения с капчей сохранено. Теперь укажите поле, куда вставить ответ."
+   },
+   "optionsPageTitle": {
+      "message": "Настройки расширения 2Captcha"
+   },
+   "proxySettings": {
+      "message": "Настройки прокси"
+   },
+   "proxyType": {
+      "message": "Тип прокси"
+   },
+   "putCaptchaAnswerHere": {
+      "message": "Вставить ответ на капчу сюда"
+   },
+   "save": {
+      "message": "Сохранить"
+   },
+   "seconds": {
+      "message": "секунд"
+   },
+   "settingsLink": {
+      "message": "Настройки"
+   },
+   "solveWith2Captcha": {
+      "message": "Решить с 2Captcha"
+   },
+   "solved": {
+      "message": "Капча решена!"
+   },
+   "solving": {
+      "message": "Решается..."
+   },
+   "submitFormsAutomatically": {
+      "message": "Отправлять формы автоматически"
+   },
+   "times": {
+      "message": "раз"
+   },
+   "useProxy": {
+      "message": "Использовать прокси"
+   }
+}
