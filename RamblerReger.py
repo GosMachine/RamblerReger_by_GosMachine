@@ -1,12 +1,10 @@
 import time
-import ctypes
-import os
-from settings import domaincount, imap_activate, captcha_service
+from settings import domaincount, imap_activate, captcha_service, secret_question, proxypath, proxy_type
 import random
 from colorama import init
 from colorama import Fore, Style
 from selenium import webdriver
-from multiprocessing import Process
+from multiprocessing import Pool
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
@@ -21,15 +19,15 @@ init()
 another = True
 
 
-def start(): #запуск chromedriver
+def start(args): #запуск chromedriver
     global driver, wait
     driver_path = r'.\chromedriver.exe'
     chrome_options = Options()
     chrome_options.add_argument('--disable-logging')
     if captcha_service == 2:
-        chrome_options.add_extension(r".\api.crx")
-    elif captcha_service == 1: # пока только 1 сервис
-        pass
+        chrome_options.add_extension(r".\rucaptcha_api.crx")
+    elif captcha_service == 1:
+        chrome_options.add_extension(r".\rehalka_api.crx")
     service = Service(driver_path)
     driver = webdriver.Chrome(service=service, options=chrome_options)
     wait = WebDriverWait(driver, 10)
@@ -49,7 +47,7 @@ def rega():
     windows = driver.window_handles
     for window in windows:
         driver.switch_to.window(window)
-        if driver.current_url == 'chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/options/options.html':
+        if driver.current_url != 'data:;':
             driver.switch_to.window(window)
             time.sleep(0.5)
             driver.close()
@@ -88,7 +86,10 @@ def rega():
     driver.find_element(By.XPATH, '//*[@data-cerber-id="registration_form::mail::step_1::answer"]').send_keys(secret)
     butttton_complete = WebDriverWait(driver, 75).until(EC.element_to_be_clickable((By.XPATH, '//*[@data-cerber-id="login_form::main::login_button"]')))
     butttton_complete.click()
-    secret = f':{secret}'
+    if secret_question:
+        secret = f':{secret}'
+    else:
+        secret = ''
     wait.until(presence_of_element_located((By.XPATH, '//*[@data-cerber-id="registration_form::step_2::add_later"]'))).click()
     time.sleep(0.5)
     if imap_activate:
@@ -128,7 +129,7 @@ def zapis():
 def another_service():#если нужно создать 1 почту для другой программы и не записывать в result.txt
     global another
     another = False
-    return start()
+    return start('ok')
 
 
 if __name__ == '__main__':
@@ -151,17 +152,13 @@ if __name__ == '__main__':
     print(text)
     threading = int(input(Style.RESET_ALL + Fore.BLUE + 'Threading: ' + Style.BRIGHT))
     count = int(input(Style.RESET_ALL + Fore.BLUE + 'Count: ' + Style.BRIGHT))
-    counter = 0
-    processes = []
-    while counter < count:
-        for _ in range(threading):
-            try:
-                p = Process(target=start)
-                p.start()
-                processes.append(p)
-                time.sleep(2)
-            except TimeoutException as e:
-                print('Ошибка')
-        counter += threading
-        for p in processes:
-            p.join()
+    with Pool(processes=threading) as pool:
+        for i in range(count):
+            time.sleep(2)
+            pool.apply_async(start, (i,))
+        pool.close()
+        pool.join()
+
+
+#TODO добавить прокси
+#TODO подготовить под github и добавить коментарии

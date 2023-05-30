@@ -1,7 +1,10 @@
 captcha_service = 2
-token = '' #api token
+token = ''
 domaincount = 3 #лучше использовать 3
+secret_question = True
 imap_activate = True
+proxypath = ''  #путь к txt файлу, можно оставить пустым
+proxy_type = 'socks5'
 
 
 '''
@@ -14,6 +17,6 @@ info
         5 = @ro.ru
         6 = random
     captcha_service:
-        1 = rehalka.online #пока нету
+        1 = rehalka.online
         2 = rucaptcha.com
 '''
