@@ -1,6 +1,6 @@
 captcha_service = 2  # Текущий список сервисов указан ниже
 token = ''  # Токен от капча сервиса
-domaincount = 3  # Лучше использовать 3
+domaincount = 3  # Лучше использовать 3, список доменов указан ниже
 secret_question = True  # Сохранить секретный вопрос в result.txt ?
 imap_activate = True  # Включать IMAP ?
 proxypath = r''  # Путь к txt файлу c proxy, можно оставить пустым
