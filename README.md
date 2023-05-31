@@ -17,8 +17,8 @@ IMAP
 2. Перейдите в папку проекта
 3. Откройте 'settings.py', укажите api token и другие настройки если нужно
 4. Установите зависимости: `pip install -r requirements.txt`
-5. Запустите 'change_api.py' командой 'python change_api.py'
-6. Запустите 'RamblerReger.py' командой 'python RamblerReger.py'
+5. Запустите 'change_api.py' командой: `python change_api.py`
+6. Запустите 'RamblerReger.py' командой `python RamblerReger.py`
 
 Данные от аккаунтов будут в файле 'result.txt'
 
