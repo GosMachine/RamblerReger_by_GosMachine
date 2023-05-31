@@ -1,9 +1,9 @@
-captcha_service = 2
-token = ''
-domaincount = 3 #лучше использовать 3
-secret_question = True
-imap_activate = True
-proxypath = r''  #путь к txt файлу, можно оставить пустым
+captcha_service = 2  # Текущий список сервисов указан ниже
+token = ''  # Токен от капча сервиса
+domaincount = 3  # Лучше использовать 3
+secret_question = True  # Сохранить секретный вопрос в result.txt ?
+imap_activate = True  # Включать IMAP ?
+proxypath = r''  # Путь к txt файлу c proxy, можно оставить пустым
 
 
 '''
