@@ -1,5 +1,5 @@
 import time
-from settings import domaincount, imap_activate, captcha_service, secret_question, proxypath, proxy_type
+from settings import domaincount, imap_activate, captcha_service, secret_question, proxypath
 import random
 from colorama import init
 from colorama import Fore, Style
@@ -24,6 +24,11 @@ def start(args): #запуск chromedriver
     driver_path = r'.\chromedriver.exe'
     chrome_options = Options()
     chrome_options.add_argument('--disable-logging')
+    if proxypath:
+        with open(proxypath, 'r') as file:
+            proxy_list = file.read().splitlines()
+        proxy = random.choice(proxy_list)
+        chrome_options.add_argument('--proxy-server=%s' % proxy)
     if captcha_service == 2:
         chrome_options.add_extension(r".\rucaptcha_api.crx")
     elif captcha_service == 1:
@@ -158,7 +163,3 @@ if __name__ == '__main__':
             pool.apply_async(start, (i,))
         pool.close()
         pool.join()
-
-
-#TODO добавить прокси
-#TODO подготовить под github и добавить коментарии

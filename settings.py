@@ -3,8 +3,7 @@ token = ''
 domaincount = 3 #лучше использовать 3
 secret_question = True
 imap_activate = True
-proxypath = ''  #путь к txt файлу, можно оставить пустым
-proxy_type = 'socks5'
+proxypath = r''  #путь к txt файлу, можно оставить пустым
 
 
 '''
